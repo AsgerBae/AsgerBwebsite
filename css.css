@@ -1,0 +1,235 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-03-2014, 17:15:48
+    Author     : User
+*/
+body{
+    width:100%;
+    overflow-x:hidden;
+    font-family: 'Roboto',sans-serif;
+    padding:0;
+    margin:0;
+    background-color: #ff3322;
+}
+
+/*CONTAINER*/
+
+#container{
+    //border:1px solid #111111;
+    //border-radius: 2px;
+    margin: 70px auto 70px auto;
+    max-width: 900px;
+    min-height: 1000px;
+    background-color: #ffffff;
+    position:initial;
+    //overflow:hidden;
+}
+
+/*HEADER*/
+
+header{
+    height:200px;
+}
+header > img {
+    height:200px;
+    margin:0 auto 0  auto;
+}
+
+/*NAVBAR*/
+
+
+#banner{
+    margin-left: 10px;
+    font-size: 25px;
+    vertical-align: middle;
+    line-height:40px;
+    color:white;
+    position:absolute;
+    float:left;
+}
+#replace-nav{
+    
+    height:0px;
+}
+nav{
+    display:block;
+    min-height:40px;
+    width:100%;
+    max-width:900px;
+    background-color: #111111;
+}
+nav ul {
+    list-style: none;
+}
+#navbar-list{
+    height:40px;
+    padding:0;
+    margin:0px;
+}
+#navbar-list>li{
+    color:#FFFFFF;
+    font-weight:100;
+    margin:0;
+    padding:5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height:30px;
+    max-height:30px;
+    height:auto;
+    display:block;
+    float:left;
+    min-width: 90px;
+}
+#navbar-list a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color:#FFFFFF;
+}
+#navbar-list li:hover, #navbar-list li:active{
+    cursor:pointer;
+    background-color:#000000;
+}
+nav ul>li{
+    position:relative;
+}
+nav ul>li>ul{
+    padding:0;
+    display:none;
+    background-color: #111111;
+    position:absolute;
+    top:100%;
+    left:0%;
+}
+nav ul>li:hover>ul,nav ul>li:active>ul{
+    display:block;
+}
+nav li{
+    min-width: 90px;
+    display:inline-block;
+}
+nav>ul li{
+    -webkit-transition:background-color 0.3s, font-size 0.1s;
+    transition:background-color 0.3s, font-size 0.1s;
+    background-color: #111111;
+    font-size: 19px;
+}
+nav>ul li:hover, nav>ul li:active{
+    background-color:#000000;
+    font-size: 22px;
+}
+nav>ul>li>ul>li{
+    padding:0;
+    text-align: center;
+    vertical-align: middle;
+    line-height:40px;
+    max-height:40px;
+    height:auto;
+    width:100%;
+}
+#mobile-select{
+    position:relative;
+    width:40px;
+    height:40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height:40px;
+    max-height:40px;
+    display:none;
+    margin-top: auto;
+    margin-left:0;
+    margin-bottom: auto;
+    color:#ffffff;
+    font-size:25px;
+    -webkit-transition:-webkit-transform 0.5s, left 0.55s;
+    transition:transform 0.5s, left 0.5s;
+}
+@media (max-width: 900px){
+    #container{
+        margin:0;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+@media (max-width: 419px){
+    #mobile-select{
+        display:block;
+    }
+    #container{
+        overflow:hidden;
+        -webkit-transition:margin-left 0.5s, margin-right 0.5s;
+        transition:margin-left 0.5s, margin-right 0.5s;
+        position:relative;
+    }
+    #navbar-list{
+        -webkit-transition: left 0.5s;
+        transition:left 0.5s;
+        z-index:200;
+        background-color:#111111;
+        position:fixed;
+        top:0;
+        left:100%;
+        height:100%;
+    }
+    nav li{
+        width:100%;
+        display:block;
+    }
+    nav>ul>li>ul{
+        width:100%;
+    }
+}
+
+/*MAIN*/
+
+main{
+    display:block;
+    min-height:900px;;
+}
+
+ /*FOOTER*/
+
+footer{
+    background-color:#111111;
+    color:#FFFFFF;
+}
+#footer-list{
+    height:80px;
+    padding:0;
+    margin:0;
+}
+#footer-list>li{
+    font-weight:100;
+    display:block;
+    float:left;
+    text-align:center;
+    line-height:80px;
+    height:auto;
+    vertical-align: middle;
+    width:33%;
+}
+#footer-list a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color:#FFFFFF;
+}
+/*::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+      background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+      background-color: #111111; 
+}
+::-webkit-scrollbar-corner {
+      background-color: rgba(0, 0, 0, 0.3); 
+}*/

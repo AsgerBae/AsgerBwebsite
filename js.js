@@ -48,7 +48,7 @@ window.onresize = function(){
        navPos = 270;
    }
 };
-window.onscroll = function(){
+window.onscroll = document.ontouchstart = function(){
     var replaNav = document.getElementById('replace-nav');
     if(window.scrollY > navPos){
         nav.style.position = 'fixed';
